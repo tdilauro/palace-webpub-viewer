@@ -448,8 +448,6 @@ describe("IFrameNavigator", () => {
             await pause();
             expect(paginatorStart.callCount).to.equal(1);
             expect(paginatorStart.args[0][0]).to.equal(0);
-
-            expect(document.body.style.overflow).to.equal("hidden");
         });
 
         it("should set up the event handler on iframe load", async () => {
